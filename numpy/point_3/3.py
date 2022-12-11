@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 steps = 255
-u_0 = np.loadtxt('init.txt', dtype=float)
+u_0 = np.loadtxt('start.dat.txt', dtype=float)
 A = np.eye(u_0.size) - np.roll(np.eye(u_0.size), -1, axis=1)
 B = np.eye(u_0.size) - 0.5 * A
 
